@@ -2,7 +2,7 @@
 $sheetName = "Sheet1"
 $objExcel.Visible = $true
 $objExcel.DisplayAlerts = $false
-$file = "D:\BDAT program assignments\business process\sample_loan_data.xlsx"
+$file = "path"
 $workbook = $objExcel.Workbooks.Open($file)
 $sheet = $workbook.Worksheets.Item($sheetName)
 $sheet2=$workbook.Worksheets.Item(2)
@@ -17,7 +17,7 @@ $total=$loan_amount+$total
 }
 $sheet2.Cells.Item(1,1)= "Total Loan Amount"
 $sheet2.Cells.Item(1,2)= $total
-$path="D:\BDAT program assignments\business process\sample_loan_data2.xlsx"
+$path="path"
 $workbook.SaveAs($path)
 $workbook.Close
 $objExcel.Workbooks.Close()
