@@ -1,4 +1,4 @@
-﻿$file = "D:\BDAT program assignments\business process\sample_loan_data.xlsx"
+﻿$file = "path"
 $sheetName = "Sheet1"
 $objExcel = New-Object -ComObject Excel.Application
 $objExcel.Visible = $true
@@ -48,7 +48,7 @@ $temp_amount= $temp_amount - $int_amount
 }
 }
 $ext=".xlsx"
-$path="D:\BDAT program assignments\business process\project\sample_loan_data_report$ext"
+$path="path$ext"
 $workbook.SaveAs($path) 
 $workbook.Close
 
